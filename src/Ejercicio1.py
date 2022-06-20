@@ -3,47 +3,37 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-"""
-1. Conversión de temperaturas
-Se quiere transformar temperaturas en grados fahrenheit a grados centígrados y viceversa.
-
-Escribir las funciones para convertir la temperatura en grados centigrados en fahrenheit como un número decimal, 
-utilice esta formula para calcular los grados centígrados y retorne el resultado obtenido. Y viceversa.
-
-def convertir_a_fahrenheit(centigrados):
-def convertir_a_centigrados(fahrenheit):
+""" 1. Conversión de temperaturas """
+"""Se quiere transformar temperaturas en grados fahrenheit a grados centígrados y viceversa"""
+"""Escribir las funciones para convertir la temperatura en grados centigrados en fahrenheit como un número decimal, """
+"""utilice esta formula para calcular los grados centígrados y retorne el resultado obtenido. Y viceversa.
 """
 
 # ************ Funciones a implementar del ejercicio   **********************
 
-
 def convertir_a_centigrados(fahrenheit):
-    """
-    Esta función toma como parámetro el número flotante ingresado en el input, guardado en la variable 'farenheit'. 
-	Se procesa esta variable dentro de la función realizando la fórmula para pasar de grados Farenheit a Centígrados
-	Se retorna el resultado para ser impreso.
-    """
-    return (fahrenheit - 32) / 1.8
+	"""Esta función toma como parámetro el número flotante ingresado en el input, guardado en la variable 'farenheit'"""
+	"""Se procesa la variable dentro de la función realizando la fórmula para pasar de Farenheit a Centígrados"""
+	"""Se retorna el resultado para ser impreso. """
+	return (fahrenheit - 32) / 1.8
 
 
 def convertir_a_fahrenheit(centigrados):
-	"""
-	Esta función toma como parámetro el número flotante ingresado en el input, guardado en la variable 'centigrados'. 
-	Se procesa esta variable dentro de la función realizando la fórmula para pasar de grados Centígrados a Farenheit
-	Se retorna el resultado para ser impreso.
-	"""
+	""" Esta función toma como parámetro el número flotante ingresado en el input, guardado en la variable 'centigrados'"""
+	""" Se procesa esta variable dentro de la función realizando la fórmula para pasar de Centígrados a Farenheit """
+	""" Se retorna el resultado para ser impreso. """
 	return (centigrados * 1.8) + 32
 
-
-"""Precondiciones: deben ingresarse números flotantes, que son guardados en las variables farenheit y centígrados
-para ser profesados dentro de las funciones y retornar otra información, en este caso la conversión. 
-"""
+# ************ Programa *********************
+"""Precondiciones: deben ingresarse números flotantes, que son guardados en las variables farenheit y centígrados """
+"""para ser procesados dentro de las funciones y retornar otra información, en este caso la conversión. """
 fahrenheit = float(input("Ingresa los grados Fahrenheit: "))
 
-""" Se envía la variable a la función, como un parámetro """
+""" Se envía la variable a la función como parámetro """
 centigrados = convertir_a_centigrados(fahrenheit)
 
-""" Postcondiciones: Se imprime el resultado de la función, con la primer variable ingresada para realizar la verificación """
+""" Postcondiciones: """
+"""Se imprime el resultado de la función, con la primer variable ingresada para realizar la verificación """
 print(f"Los {fahrenheit} grados Fahrenheit son {centigrados} grados centigrados")
 
 
