@@ -25,19 +25,23 @@ def convertir_a_fahrenheit(centigrados):
 	return (centigrados * 1.8) + 32
 
 # ************ Programa *********************
-"""Precondiciones: deben ingresarse números flotantes, que son guardados en las variables farenheit y centígrados """
-"""para ser procesados dentro de las funciones y retornar otra información, en este caso la conversión. """
-fahrenheit = float(input("Ingresa los grados Fahrenheit: "))
+def principal():
+	"""Precondiciones: deben ingresarse números flotantes, que son guardados en las variables farenheit y centígrados """
+	"""para ser procesados dentro de las funciones y retornar otra información, en este caso la conversión. """
+	fahrenheit = float(input("Ingresa los grados Fahrenheit: "))
 
-""" Se envía la variable a la función como parámetro """
-centigrados = convertir_a_centigrados(fahrenheit)
+	""" Se envía la variable a la función como parámetro """
+	centigrados = convertir_a_centigrados(fahrenheit)
 
-""" Postcondiciones: """
-"""Se imprime el resultado de la función, con la primer variable ingresada para realizar la verificación """
-print(f"Los {fahrenheit} grados Fahrenheit son {centigrados} grados centigrados")
+	""" Postcondiciones: """
+	"""Se imprime el resultado de la función, con la primer variable ingresada para realizar la verificación """
+	print(f"Los {fahrenheit} grados Fahrenheit son {centigrados} grados centigrados")
 
 
-""" En este caso se realiza lo mismo, pero a la inversa para pasar de centígrados a fahrenheit """
-centigrados = float(input("Ingresa los grados Centigrados: "))
-fahrenheit = convertir_a_fahrenheit(centigrados)
-print(f"Los {centigrados} grados centigrados son {fahrenheit} grados Fahrenheit")
+	""" En este caso se realiza lo mismo, pero a la inversa para pasar de centígrados a fahrenheit """
+	centigrados = float(input("Ingresa los grados Centigrados: "))
+	fahrenheit = convertir_a_fahrenheit(centigrados)
+	print(f"Los {centigrados} grados centigrados son {fahrenheit} grados Fahrenheit")
+
+if __name__ == "__main__":
+    principal()
