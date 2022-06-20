@@ -3,6 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
+import pytest
 from src.Ejercicio1 import convertir_a_centigrados, convertir_a_fahrenheit
 
 def test_farenheit_a_centigrados():
