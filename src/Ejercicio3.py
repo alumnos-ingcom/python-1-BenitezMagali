@@ -14,7 +14,7 @@
 def compara(numero, otro_numero):
 	"""Se declara una variable para retornar"""
 	"""Se comparan los numeros ingresados"""
-	"""Se recorren las condiciones para retornar un resultado"""
+	"""Se recorren las condiciones para comparar numeros"""
 	mayorOmenor= 0
 	if numero < otro_numero:
 		mayorOmenor= -1
@@ -23,14 +23,14 @@ def compara(numero, otro_numero):
 	else:
 		mayorOmenor=1
 	"""Poscondiciones:"""
-	"""Se imprime el resultado y se retorna"""
+	"""Se imprime y se retorna el resultado"""
 	print(mayorOmenor)
 	return mayorOmenor
 
 	
 def principal():
 	"""Precondiciones:"""
-	"""Se necesitan al menos dos numeros enteros"""
+	"""Se necesitan dos numeros enteros positivos o negativos"""
 	"""Se invoca la función para comparar enviando ambos como parámetros"""
 	primerNumero = int(input("Ingrese un número: "))
 	segundoNumero = int(input("Ingrese otro número: "))
